@@ -1,0 +1,16 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Local configs
+*.log
+*.bak
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Large media (don’t push videos here)
+Poptooth Website/videos/
