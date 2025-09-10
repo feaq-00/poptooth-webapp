@@ -60,6 +60,7 @@ resource "aws_s3_object" "website_files" {
   bucket       = aws_s3_bucket.static_site.id
   key          = each.value
   source       = "${path.module}/Poptooth Website/${each.value}"
+  etag         = filemd5("${path.module}/Poptooth Website/${each.value}") 
   content_type = lookup(var.mime_types, regex("[^.]+$", each.value), "application/octet-stream")
 }
 
