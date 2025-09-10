@@ -220,5 +220,5 @@ $(document).ready(function() {
 
 // Submit button for contact page
 $('#submit-button').on('click', function() {
-    alert('Thank you for submitting, we will get back to you soon!')
+    alert('Please contact us directly via our instagram page @p0ptooth instead. Thank you!')
 })
