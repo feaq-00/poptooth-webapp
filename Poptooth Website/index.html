@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poptooth!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import font HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon link HERE -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <!-- Bootstrap link HERE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- jQuery link HERE -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<!-- Preloader -->
+    <div id="preloader"></div>
+
+<!-- Navigation bar -->
+    <header>
+        <div style="font-family: 'Sora', sans-serif">
+            <div id="navBar" class="row">
+                <div class="col-6 d-flex">
+                    <a href="index.html" style="text-decoration: none;">
+                        <img id="logo" src="images\pop-removebg-preview.png" alt="logo" title="Home">
+                    </a>
+                    <a href="index.html" style="text-decoration: none;">
+                        <div id="poptooth-title" title="Home">
+                            Poptooth
+                        </div>
+                    </a>
+                </div>
+                <div id="navBar-right" class="col-6 d-flex justify-content-around align-items-center gap-2">
+                    <a class="all-pages" href="#services">Services</a>
+                    <a class="all-pages" href="#projects-gallery">Gallery</a>
+                    <a class="all-pages" href="about.html">About</a>
+                    <a class="all-pages" href="contact.html">Contact</a>
+                    <!-- <button class="hamburger">
+                        <div class="bar"></div>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Title section -->
+    <section id="main-title">
+        <div class="container" style="font-family: 'Sora', sans-serif;">
+            <video autoplay loop muted id="bg-vid">
+                <source src="./images/vid.mp4" type="video/mp4">
+            </video>
+            <div id="hero" class="container">      
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div id="title" class="container text-light fw-bold lh-1 mb-5" style="font-size: clamp(28px, 3.5vw, 68px);">
+                            Need a <span style="color:rgb(255, 146, 255)">band</span> or a <span style="color:rgb(245, 100, 213)">musician?</span> Or perhaps you're interested in learning a<span style="color:rgb( 184, 56, 189)"> musical instrument?</span>
+                        </div>
+                        <div id="sub" class="container text-light h5">
+                            <span style="font-weight: 200;">Don't worry, we've got you </span><span style="color:rgb(255, 137, 255); font-weight: 700">covered.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- This section is to blend the header and services -->
+    <section id="blend1">
+        <br><br><br><br>
+    </section>
+    <section id="blend2">
+        <br><br><br><br>
+    </section>
+    
+<!-- Services section -->
+    <section id="services">
+        <div class="container my-5 py-5" style="font-family: 'Sora', sans-serif;">
+            <div class="row text-center">
+                <div class="col h1 fw-bold" style="color:rgb(99, 10, 99)">
+                    S E R V I C E S 
+                </div>
+            </div>
+
+            <div class="row justify-content-center gap-3 mt-5">
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/gigs.jpg" alt="Gig Services" class="img">
+                    </figure>
+                    <h3>Gigs</h3>
+                    <p>Need a band to play for your event? Weddings, corporate events, small to medium-scale shows? Get in touch with us. We are more than happy to perform for you.</p>
+                </div>
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/session.jpg" alt="Session Services" class="img">
+                    </figure>
+                    <h3>Sessionist</h3>
+                    <p>We provide individual musicians to play for your gig or show. Need a bassist? Keyboardist? Guitarist? Worry not; our musicians are experienced in sessioning for other bands that are short of musicians.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center gap-3 mt-5">
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/bass.jpg" alt="Bass Gtr Services" class="img">
+                    </figure>
+                    <h3>Bass Guitar Lesson</h3>
+                    <p>Meet Akid, a full-time bass guitar teacher. He joined Poptooth in late 2018 and has been playing for us ever since then. Akid is very proficient with the bass guitar, having learned how to play it all by himself. He excels in any genre and is an asset to any band. Don't be shy about approaching him as he is a very friendly person and is more than happy to share his knowledge with anyone.</p>
+                </div>
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/kbd.jpg" alt="Piano Services" class="img">
+                    </figure>
+                    <h3>Piano Lesson</h3>
+                    <p>Having learned how to play piano from Youtube tutorials and jamming with his friends at an adolescent age, Syafiq has grown into the idea of playing in a band with his keyboard, in particular, his Korg Kross that he first bought in 2017. If you're interested in playing keyboard with a band and not a traditional Mozart piano piece, then he might be the right person for you to learn from!</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center gap-3 mt-5">
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/drum.jpg" alt="Drum Services" class="img">
+                    </figure>
+                    <h3>Drum Lesson</h3>
+                    <p>Wenhan is a Grade 8 drummer. A versatile and technical drummer that is capable of playing any genre. He is an active drummer for his church, playing for them every weekend. He joined Poptooth along with Howie a year later after the band was formed, essentially making us a 6-piece band. He has an easy-going personality and is very approachable. His favourite genre is pop music. Contact us now to not miss his intricated drumming style!</p>
+                </div>
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/gtr.jpg" alt="E. Gtr Services" class="img">
+                    </figure>
+                    <h3>Guitar Lesson</h3>
+                    <p>Another Grade 8 guitarist. Hao Yee, better known by his nickname, Howie, is a lead guitarist for Poptooth. He does freelance work, teaching both acoustic and electric guitar lessons during his free time. He leads our band with his melodic guitar riffs and solos. His go-to genre is R&B and blues, and John Mayer is his idol. </p>
+                </div>
+            </div>
+	        <div class="row justify-content-center gap-3 mt-5">
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/logic.jpg" alt="LogicProX Services" class="img">
+                    </figure>
+                    <h3>Song Composing using Logic Pro X</h3>
+                    <p>Syafiq has been working with Logic Pro X since the band was formed in 2017 and also for his school projects. He uses the DAW mostly to compose and mix Poptooth's samples and song covers. In this program, you will learn how to use the DAW (beginner level) and compose music.</p>
+                </div>
+                <div class="col-11 col-lg-5">
+                    <figure class="img-box">
+                        <img src="./images/svc.jpg" alt="Gtr Services" class="img">
+                    </figure>
+                    <h3>Guitar Servicing/Repair</h3>
+                    <p>Guitar needs to restring? Guitar pick-up not working? Dani, our instrument tech member, provides guitar servicing and repairs. He enjoys this mainly as a hobby and freelance work. A very practical, hands-on dude who likes to work with electronics. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blend3">
+        <br><br><br>
+    </section>
+
+<!-- Gallery section -->
+    <section id="projects-gallery">
+        <div class="container py-5" style="font-family: 'Sora', sans-serif;">
+            <div class="row text-center">
+                <div class="col h1 fw-bold mb-5" style="color:rgb(99, 10, 99)">
+                    G A L L E R Y 
+                </div>
+            </div>
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center text-center">
+                    <div class="col-1">
+                        <span id="arrow-left" class="arrow d-flex justify-content-center">&#8249;</span>
+                    </div>
+                    <div class="col-9 d-flex">
+                        <div id="project1">
+                            <div id="content1" class="content d-flex flex-column justify-content-center align-items-center">
+                                <h4>24K Magic (Cover)</h4>
+                                <p>One of our favorite Bruno Mars songs to jam to. Did it during circuit breaker when we were so bored.</p>
+                                <button id="playButton1" class="button">Play</button>
+                            </div>
+                        <div id="project2" hidden>
+                            <div id="content2" class="content d-flex flex-column justify-content-center align-items-center">
+                                <h5>Dragonball Durag (Cover)</h5>
+                                <p>Thundercat made a masterpiece with this song. Enjoy Moshi, our rhythm guitarist, singing!</p>
+                                <button id="playButton2" class="button">Play</button>
+                            </div>
+                        </div>
+                        <div hidden id="project3" hidden>
+                            <div id="content3" class="content d-flex flex-column justify-content-center align-items-center">
+                                <h4>harp jam (Cover)</h4>
+                                <p>Luna Li is such a gem. Her music inspired us to cover one of her songs.</p>
+                                <button id="playButton3" class="button">Play</button>
+                            </div>
+                        </div>
+                        <div hidden id="project4" hidden>
+                            <div id="content4" class="content d-flex flex-column justify-content-center align-items-center">
+                                <h4>Penelope - Early Eyes</h4>
+                                <p>Covered Penelope by Early Eyes in our school concert. Festival of Sound 2019.</p>
+                                <button id="playButton4" class="button">Play</button>
+                            </div>
+                        </div>
+                        <div hidden id="project5" hidden>
+                            <div id="content5" class="content d-flex flex-column justify-content-center align-items-center">
+                                <h4>Take Me - Poptooth</h4>
+                                <p>One of our two original songs that we composed. Festival of Sound 2019</p>
+                                <button id="playButton5" class="button">Play</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <span id="arrow-right" class="arrow d-flex justify-content-center">&#8250;</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div id="myModal1" class="modal" style="font-family: 'Sora', sans-serif;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="myVideo1" class="allVideos" width="100%" height="100%" controls volume="0.5">
+                    <source src="./videos/24K Magic.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="myModal2" class="modal" style="font-family: 'Sora', sans-serif;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="myVideo2" class="allVideos" width="100%" height="auto" controls volume="0.5">
+                    <source src="./videos/durag.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="myModal3" class="modal" style="font-family: 'Sora', sans-serif;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="myVideo3" class="allVideos" width="100%" height="auto" controls volume="0.5">
+                    <source src="./videos/luna li.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="myModal4" class="modal" style="font-family: 'Sora', sans-serif;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="myVideo4" class="allVideos" width="100%" height="auto" controls volume="0.5">
+                    <source src="./videos/penelope.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="myModal5" class="modal" style="font-family: 'Sora', sans-serif;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="myVideo5" class="allVideos" width="100%" height="auto" controls>
+                    <source src="./videos/take me.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+<!-- Contact section -->
+    <section id="contact" style="font-family: 'Sora', sans-serif;">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col text-center">
+                    <p class="text-center text-secondary mt-3 mb-4">Please feel free to contact us.</p> 
+                    <a href="contact.html" class="contact-button h3">contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Socials section -->
+    <footer style="font-family: 'Sora', sans-serif;">
+        <div class="container">
+            <div class="row-gap-5 justify-content-center text-center mt-3 pt-5">
+                <div class="col">
+                    <p class="text-secondary text-center">follow us</p>
+                    <a href="https://www.instagram.com/p0ptooth/" style="text-decoration: none;" target="_blank" title="Instagram">
+                        <img src="./images/insta.png" class="socials" alt="instagram">
+                    </a>
+                    <a href="https://soundcloud.com/poptooth" style="text-decoration: none;" target="_blank" title="SoundCloud">
+                        <img src="./images/soundcloud.png" class="socials" alt="soundcloud">
+                    </a>
+                    <a href="https://poptooth.bandcamp.com/" style="text-decoration: none;" target="_blank" title="Bandcamp">
+                        <img src="./images/bandcamp.png" class="socials" alt="bandcamp">
+                    </a>
+                    <a href="https://www.facebook.com/p0ptooth" style="text-decoration: none;" target="_blank" title="Facebook">
+                        <img src="./images/facebook.png" class="socials" alt="facebook">
+                    </a>
+                    <a href="https://opensea.io/poptooth" style="text-decoration: none;" target="_blank" title="Opensea">
+                        <img src="./images/opensea.png" class="socials" alt="opensea">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col pt-3">
+                    <p class="social-text text-secondary text-center">poptooth | <b>Copyright © 2017 poptooth</b> | All Rights Reserved.</p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Back to top button -->
+    <div id="back-to-top">
+        <a href="#" class="scroll-to-top">Back to top</a>
+    </div>
+</body>
+</html>
