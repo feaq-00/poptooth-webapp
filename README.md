@@ -1,26 +1,29 @@
 # 🌐 Terraform Static Website on AWS (Poptooth)
 
-This project provisions a static website using **Terraform**, **AWS S3**, and **CloudFront**.
+This project provisions and hosts a static website using **Terraform**, **AWS S3**, and **CloudFront**.
+
+🔗 **Live Demo**: [https://tinyurl.com/p0ptooth](https://tinyurl.com/p0ptooth)
 
 ---
 
-## ✨ Features
-- 🪣 **S3 bucket** with website configuration
-- 🔓 **Public bucket policy** (with access block override)
-- ⚡ **Automatic file uploads** via Terraform
-- 🌍 **CloudFront distribution** for HTTPS + CDN
-- 🚀 **Deployed site**: [https://tinyurl.com/p0ptooth](https://tinyurl.com/p0ptooth)
+## ✨ Key Highlights
+- 📜 **Infrastructure as Code (IaC)** — Automated provisioning with Terraform.  
+- 🪣 **Amazon S3** — Stores static site files (HTML, CSS, JS, images, videos).  
+- 🌍 **CloudFront CDN** — Provides global caching and HTTPS for secure access.  
+- 🔒 **IAM & S3 Policies** — Configured for least-privilege and secure access.  
+- ⚡ **Scalability** — Static hosting architecture designed for high availability.  
 
 ---
 
-## 🏗️ Architecture
-- 🪣 **S3** → stores the static site files (HTML, CSS, JS, images, videos).
-- 🌍 **CloudFront** → provides HTTPS and global caching.
-- 📜 **Terraform** → manages the infrastructure as code (IaC).
+## 🏗️ Architecture Overview
 
----
+```text
+🌍 User (browser)
+   │  HTTPS request
+   ▼
+🌍 CloudFront (CDN)
+   │  Fetch content (cache miss)
+   ▼
+🪣 Amazon S3 Bucket (static files)
 
-## ⚙️ How to Deploy
-1. 📥 Clone this repo  
-   ```bash
-   git clone <your-repo-url>
+📜 Terraform (IaC) ──► provisions & manages S3 + CloudFront
