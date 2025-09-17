@@ -7,6 +7,20 @@ provider "aws" {
 # ------------------------------------------------------------------
 resource "aws_s3_bucket" "static_site" {
   bucket = "poptooth-static-site-bucket"
+
+  tags = {
+    Name        = "poptooth-static-site-bucket"
+    Environment = "dev"
+  }
+}
+
+# Enable versioning for the S3 bucket
+resource "aws_s3_bucket_versioning" "static_site" {
+  bucket = aws_s3_bucket.static_site.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
 }
 
 resource "aws_s3_bucket_website_configuration" "static_site" {
