@@ -13,5 +13,8 @@
 Thumbs.db
 
 # Media files
-Poptooth Website/videos/
+*.jpg
+*.png
+*.mp4
 Poptooth Website/images/
+Poptooth Website/videos/
