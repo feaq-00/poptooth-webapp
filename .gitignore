@@ -12,5 +12,6 @@
 .DS_Store
 Thumbs.db
 
-# Large media (don’t push videos here)
+# Media files
 Poptooth Website/videos/
+Poptooth Website/images/
